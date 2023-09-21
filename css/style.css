@@ -1,0 +1,335 @@
+/* *COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.align-center{
+        align-items: center;
+}
+
+.justify-center{
+    justify-content: center ;    
+}
+
+ .btn{
+ display: inline-block;
+    background-color:#cfc91d;
+    font-weight: 800;
+    font-size: 14px;
+    color: #0b1016;
+    text-transform: uppercase;
+    padding: 19px 43px;
+    border-radius: 15px 0;
+}
+
+
+.heading{
+    text-align: center;
+}
+
+ .heading h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+}
+
+ .heading p{
+    color: #7e8287;
+    font-size: 16px;
+}
+.heading p span{
+   font-weight: 800;
+   color: #7e8287;
+}
+
+
+/* *COMMON CSS END */
+
+/* *NAVBAR STARTS */
+nav{
+    background-color: #02918c;
+}
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+    text-align: right;
+}
+
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: block;
+}
+
+
+
+/* *NAVBAR ENDS */
+
+
+/* * BANNER STARTS HERE */
+#banner{
+    background-image: url(../images/banner.jpg);
+    height: 728px;
+    background-size: cover;
+}
+#banner .container,
+#banner .row{
+    height: 100%;
+}
+
+#banner .banner_cnt{
+    text-align: center;
+    color: white;
+}
+
+#banner .banner_cnt h4{
+    font-size: 30px;
+}
+
+
+#banner .banner_cnt h1{
+    font-weight: 800;
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+#banner .banner_cnt p{
+    font-size: 18px;
+}
+
+#banner .banner_cnt img{
+    margin: 50px 0;
+}
+
+
+
+/* * BANNER ENDS HERE */
+
+
+/* * about starts here */
+#about{
+    padding: 100px 0;
+}
+
+.about_card{
+    width: 25%;
+    margin-top: 50px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding: 40px 0;
+}
+
+.about_card span{
+    font-size: 30px;
+    color: #02918c;
+
+}
+
+.about_card h4{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 25px 0;
+}
+
+
+.about_card p{
+    font-size: 11px;
+    color: #7e8287;
+    padding:0 50px;
+}
+
+.about_card:last-child{
+    border: none;
+}
+
+/* * about ends here */
+
+
+/* services starts here */
+#service{
+    background-image: url(../images/bg-image.jpg);
+    height: 728px;
+    background-size: cover;
+}
+
+#service{
+    padding: 100px 0;
+}
+
+.service_card{
+    width: 25%;
+    margin-top: 50px;
+    text-align: left;
+    padding: 40px 0;
+}
+
+.service_card span{
+    font-size: 30px;
+    color: #02918c;
+}
+
+.service_card h4{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 25px 0;
+}
+
+
+.service_card p{
+    font-size: 11px;
+    color: #7e8287;
+    padding:0 50px;
+}
+
+
+
+/* services ends here */
+
+/* WORK STARTS HERE */
+
+#about{
+    padding: 100px 0;
+}
+
+.work_card{
+    width: 25%;
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px 0;
+}
+
+.work_card span{
+    font-size: 30px;
+    color: #02918c;
+
+}
+
+.work_card h4{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 25px 0;
+}
+
+
+.work_card p{
+    font-size: 11px;
+    color: #7e8287;
+    padding:0 50px;
+}
+#work .work_card{
+    width: 25%;
+    position: relative;
+    
+}
+
+#work .work_card img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#work .work_card  .overlay{
+    position: absolute;
+      background-color: #02918c9c;
+    inset: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 80px 0;
+   transform: scale(0);
+    transition: 0.35s;
+    opacity: 0;
+
+
+}
+
+#work .work_card:hover .overlay{
+   transform: scale(1);
+   opacity: 1;
+   border-radius:
+   0;
+ 
+}
+
+/* WORK ENDS HERE */
+
+
+
+/* CONTACT STARTS HERE */
+#contact {
+    background-color: #0b0b0b;
+    padding: 65px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.form-input{
+    width: 640px;
+    
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.form-input input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    outline: none;
+    height: 50px;
+}
+
+.large-input{
+    width: 917px;
+}
+
+/* CONTACT ENDS HERE */
+
+
+/* copyright STARTS HERE */
+#copyright{
+    background-color: black;
+    color: #7e8287;
+    font-size: 12px;
+    padding: 35px 0;
+    text-align: center;
+}
+/* copyright ENDS HERE */
